@@ -1,3 +1,6 @@
+/* =========================
+   ROOT VARIABLES
+========================= */
 :root {
   --colorPrimary: #6dadec;
   --paraColor: #3B3E3F;
@@ -5,120 +8,132 @@
   --colorWhite: #ffffff;
 }
 
-/* Book Now Button */
+/* =========================
+   BOOK NOW BUTTON
+========================= */
 .book-now-btn {
-  display: inline-block;
-  padding: 14px 36px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  padding: 14px 32px;
   background: var(--colorBlack);
   color: var(--colorWhite);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
-  text-decoration: none;
   border-radius: 50px;
-  letter-spacing: 0.5px;
+  text-decoration: none;
+  letter-spacing: 0.4px;
   transition: all 0.3s ease;
-  box-shadow: 0 15px 30px rgba(0, 38, 51, 0.4);
-  width: 170px;
+  box-shadow: 0 12px 28px rgba(0, 38, 51, 0.35);
 }
 
-/* Hover Effect */
 .book-now-btn:hover {
   background: rgb(30, 122, 197);
-  color: var(--colorWhite);
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(109, 173, 236, 0.35);
+  box-shadow: 0 14px 30px rgba(109, 173, 236, 0.35);
 }
 
-/* Active (Click) */
 .book-now-btn:active {
   transform: translateY(0);
-  box-shadow: 0 6px 15px rgba(0, 38, 51, 0.3);
+  box-shadow: 0 6px 14px rgba(0, 38, 51, 0.3);
 }
 
-
+/* =========================
+   ABOUT SECTION
+========================= */
 .about-refined {
-    margin-top: 40px;
   position: relative;
+  margin-top: 40px;
   padding: 110px 0;
-  background: url("images/blog_2_img_3.jpg") center center / cover no-repeat;
+  background: url("images/blog_2_img_3.jpg") center / cover no-repeat;
   overflow: hidden;
 }
 
-/* White overlay layer */
 .about-refined::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(255, 255, 255, 0.808); /* white si layer */
+  background: rgba(255, 255, 255, 0.88);
   z-index: 1;
 }
 
-/* Content above overlay */
 .about-refined .container {
   position: relative;
   z-index: 2;
 }
 
+/* =========================
+   LAYOUT
+========================= */
 .about-layout {
   display: grid;
-  grid-template-columns: 1.4fr 0.9fr;
+  grid-template-columns: 1.4fr 1fr;
   gap: 70px;
   align-items: center;
 }
 
-/* ABOUT */
+/* =========================
+   ABOUT CONTENT
+========================= */
 .about-label {
   font-size: 13px;
-  letter-spacing: 1.5px;
+  font-weight: 600;
+  letter-spacing: 1.4px;
   text-transform: uppercase;
   color: var(--colorPrimary);
-  font-weight: 600;
 }
 
 .about-heading {
   font-size: 44px;
-  line-height: 1.2;
-  color: var(--colorBlack);
-  margin: 14px 0 22px;
   font-weight: 600;
+  color: var(--colorBlack);
+  line-height: 1.2;
+  margin: 14px 0 22px;
 }
 
 .about-main p {
-  color: var(--paraColor);
   font-size: 18px;
-  line-height: 1.8;
-  margin-bottom: 16px;
+  line-height: 1.75;
+  color: var(--paraColor);
   max-width: 600px;
+  margin-bottom: 16px;
 }
 
-/* METRICS */
+/* =========================
+   METRICS
+========================= */
 .about-metrics {
   display: flex;
-  gap: 40px;
+  gap: 30px;
   margin-top: 40px;
+  flex-wrap: wrap;
 }
 
-.about-metrics div{
-    background-color: #a8d3ff;
-    padding: 15px 20px;
-    color: whitesmoke;
-    border-radius: 20px;
+.about-metrics div {
+  background: rgba(109, 173, 236, 0.25);
+  padding: 18px 22px;
+  border-radius: 18px;
+  min-width: 150px;
 }
 
 .about-metrics strong {
-  font-size: 34px;
-  color: var(--paraColor);
+  display: block;
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--colorBlack);
 }
 
 .about-metrics span {
-  display: block;
-  font-size: 15px;
+  font-size: 14px;
   color: var(--paraColor);
   margin-top: 4px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.4px;
 }
 
-/* FORM */
+/* =========================
+   FORM
+========================= */
 .about-form-soft {
   background: var(--colorWhite);
   padding: 45px 40px;
@@ -128,9 +143,9 @@
 
 .about-form-soft h4 {
   font-size: 24px;
+  font-weight: 500;
   color: var(--colorBlack);
   margin-bottom: 6px;
-  font-weight: 500;
 }
 
 .about-form-soft p {
@@ -144,7 +159,7 @@
   width: 100%;
   padding: 14px 16px;
   border-radius: 10px;
-  border: 1px solid rgba(0, 38, 51, 0.15);
+  border: 1px solid rgba(0, 38, 51, 0.18);
   font-size: 14px;
   margin-bottom: 14px;
 }
@@ -165,9 +180,9 @@
     var(--colorPrimary),
     #8abdf0
   );
-  color: var(--paraColor);
+  color: var(--colorBlack);
   cursor: pointer;
-  transition: 0.3s;
+  transition: all 0.3s ease;
 }
 
 .about-form-soft button:hover {
@@ -175,7 +190,23 @@
   box-shadow: 0 12px 30px rgba(109, 173, 236, 0.45);
 }
 
-/* RESPONSIVE */
+/* =========================
+   MENU BUTTON
+========================= */
+.menu_right .reservation.nav-reservation {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 22px;
+  border-radius: 14px;
+  height: auto;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+/* Tablets */
 @media (max-width: 992px) {
   .about-layout {
     grid-template-columns: 1fr;
@@ -183,18 +214,38 @@
   }
 
   .about-heading {
-    font-size: 34px;
+    font-size: 36px;
+  }
+
+  .about-main p {
+    font-size: 16px;
   }
 }
 
+/* Mobile */
+@media (max-width: 576px) {
+  .about-refined {
+    padding: 70px 0;
+  }
 
-.menu_right .reservation.nav-reservation{
-    width: fit-content;
-    padding: 20px 22px;
-    height: 30px;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .about-heading {
+    font-size: 30px;
+  }
 
+  .about-metrics {
+    gap: 16px;
+  }
+
+  .about-metrics div {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-form-soft {
+    padding: 30px 24px;
+  }
+
+  .book-now-btn {
+    width: 100%;
+  }
 }
