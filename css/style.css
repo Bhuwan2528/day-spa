@@ -2841,7 +2841,7 @@ button {
     color: var(--colorWhite);
     border: none;
     font-size: 18px;
-    padding: 25px;
+    padding: 10px 20px;
 }
 
 .main_menu_2 .menu_right li .reservation:hover {

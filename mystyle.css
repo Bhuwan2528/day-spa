@@ -249,3 +249,341 @@
     width: 100%;
   }
 }
+
+
+
+
+/* ===== Service Detail Common CSS ===== */
+
+.service-detail {
+    padding: 0px 0;
+    background-color: #fafafa;
+    font-family: 'Poppins', sans-serif;
+    color: #444;
+    border-radius: 16px;
+}
+
+.service-detail .service-wrapper {
+    max-width: 1100px;
+    margin: auto;
+    background: #ffffff;
+    padding: 50px 60px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+}
+
+.service-detail h2 {
+    font-size: 38px;
+    font-weight: 600;
+    color: var(--colorBlack);
+    margin-bottom: 10px;
+}
+
+.service-detail .sub-title {
+    font-size: 18px;
+    color: #888;
+    margin-bottom: 35px;
+}
+
+.service-detail p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.service-detail h4 {
+    font-size: 24px;
+    margin: 40px 0 20px;
+    color: #1e1e1e;
+}
+
+.service-detail ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px;
+}
+
+.service-detail ul li {
+    font-size: 18px;
+    padding-left: 32px;
+    margin-bottom: 14px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.service-detail ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #7cbfa5; /* spa green */
+    font-weight: 600;
+}
+
+.service-highlight {
+    background: #f4f9f7;
+    padding: 25px 30px;
+    border-left: 5px solid #7cbfa5;
+    border-radius: 10px;
+    margin: 35px 0;
+}
+
+.service-highlight p {
+    margin: 0;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .service-detail .service-wrapper {
+        padding: 35px 25px;
+    }
+
+    .service-detail h2 {
+        font-size: 30px;
+    }
+}
+
+
+
+
+/* ===== HIFU Service Section ===== */
+
+.hifu-service {
+    padding: 0px 0;
+    background: linear-gradient(180deg, #ffffff 0%, #f6fbf9 100%);
+}
+
+.hifu-box {
+    max-width: 1150px;
+    margin: auto;
+    background: #fff;
+    padding: 60px;
+    border-radius: 18px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.07);
+}
+
+.hifu-title {
+    font-size: 40px;
+    font-weight: 600;
+    color: #1e1e1e;
+    margin-bottom: 15px;
+}
+
+.hifu-intro {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+.hifu-section h4 {
+    font-size: 26px;
+    margin: 45px 0 20px;
+    color: #1e1e1e;
+}
+
+.hifu-section p {
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 18px;
+}
+
+.hifu-benefits {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px 40px;
+    margin-top: 20px;
+}
+
+.hifu-benefits li {
+    list-style: none;
+    position: relative;
+    padding-left: 32px;
+    font-size: 16px;
+}
+
+.hifu-benefits li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #7cbfa5;
+    font-weight: 600;
+}
+
+.hifu-cta {
+    margin-top: 50px;
+    padding: 35px;
+    background: #f0f8fa;
+    border-radius: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.hifu-cta p {
+    font-size: 18px;
+    margin: 0;
+    color: #333;
+}
+
+.hifu-cta a {
+    padding: 14px 34px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary-spa {
+    background: #88bcee;
+    color: #fff;
+}
+
+.btn-primary-spa:hover {
+    background: #5bb1d3;
+    color: white;
+}
+
+.btn-outline-spa {
+    border: 1.5px solid #88bcee;
+    color: #88bcee;
+}
+
+.btn-outline-spa:hover {
+    background: #88bcee;
+    color: #fff;
+}
+
+@media(max-width: 768px) {
+    .hifu-box {
+        padding: 35px 25px;
+    }
+
+    .hifu-title {
+        font-size: 30px;
+    }
+
+    .hifu-benefits {
+        grid-template-columns: 1fr;
+    }
+
+    .hifu-cta {
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+
+
+/* ===== OxyGeneo Facial Section ===== */
+
+.oxygeneo-service {
+    padding: 90px 0;
+    background: #ffffff;
+}
+
+.oxygeneo-box {
+    max-width: 1150px;
+    margin: auto;
+    background: #f9fcfb;
+    padding: 60px;
+    border-radius: 18px;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.06);
+}
+
+.oxygeneo-title {
+    font-size: 38px;
+    font-weight: 600;
+    color: #1e1e1e;
+    margin-bottom: 15px;
+}
+
+.oxygeneo-intro {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.oxygeneo-highlight {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 14px;
+    border-left: 5px solid #7cbfa5;
+    margin: 40px 0;
+}
+
+.oxygeneo-highlight p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.oxygeneo-cta {
+    margin-top: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* ===== Spa Etiquette Section ===== */
+
+.spa-etiquette {
+    margin-top: 80px;
+    padding: 55px;
+    background: #f4f9f7;
+    border-radius: 18px;
+}
+
+.spa-etiquette h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #1e1e1e;
+}
+
+.spa-etiquette p {
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 16px;
+}
+
+.spa-etiquette ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+}
+
+.spa-etiquette ul li {
+    position: relative;
+    padding-left: 34px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.spa-etiquette ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #7cbfa5;
+    font-weight: 600;
+}
+
+@media(max-width: 768px) {
+    .oxygeneo-box {
+        padding: 35px 25px;
+    }
+
+    .oxygeneo-title {
+        font-size: 30px;
+    }
+
+    .spa-etiquette {
+        padding: 35px 25px;
+    }
+}
