@@ -3,7 +3,7 @@
     top: 0;
     width: 0;
     height: 0;
-    border: 2.5px solid #efc2ba !important;
+    border: 2.5px solid #041427 !important;
     position: fixed;
     border-radius: 4px;
     z-index: 9999999;
@@ -21,7 +21,7 @@
     width: 0;
     height: 0;
     padding: 15px;
-    border: 2px solid #efc2ba !important;
+    border: 2px solid #092547 !important;
     position: fixed;
     border-radius: 100px;
     z-index: 9999999;
