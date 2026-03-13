@@ -1031,3 +1031,469 @@ body {
         font-size: 30px;
     }
 }
+
+
+
+
+
+
+
+
+
+.voucher-section{
+    padding:100px 10%;
+    background:linear-gradient(135deg,#fbfeffd8,#d1edff);
+    text-align:center;
+    color:white;
+}
+
+.voucher-heading{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.voucher-sub{
+    margin-bottom:60px;
+    opacity:0.9;
+}
+
+
+/* voucher card */
+
+.voucher-card{
+    display:flex;
+    background:white;
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:0 25px 60px rgba(0,0,0,0.2);
+    max-width:1000px;
+    margin:auto;
+}
+
+
+/* left */
+
+.voucher-left{
+    padding:50px;
+    flex:1;
+    text-align:left;
+}
+
+.brand{
+    font-size:14px;
+    letter-spacing:3px;
+    color:#083664;
+    margin-bottom:15px;
+    font-weight: 500;
+}
+
+.voucher-left h2{
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.desc{
+    color:#555;
+    line-height:1.6;
+    margin-bottom:30px;
+}
+
+.voucher-details{
+    display:flex;
+    gap:40px;
+    margin-bottom:30px;
+    color: #444;
+}
+
+.voucher-details span{
+    font-size:13px;
+    color:#777;
+    display:block;
+}
+
+.voucher-details strong{
+    font-size:18px;
+}
+
+
+/* button */
+
+.buy-btn{
+    background:linear-gradient(135deg, rgb(18, 115, 194), rgb(5, 44, 88));
+    border:none;
+    padding:14px 32px;
+    color:white;
+    font-size:16px;
+    border-radius:30px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.buy-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+
+/* right image */
+
+.voucher-right{
+    flex:1;
+}
+
+.voucher-right img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+
+
+/* terms */
+
+.voucher-terms{
+    padding:100px 10%;
+    background:#f6f9ff;
+}
+
+.terms-wrapper{
+    max-width:950px;
+    margin:auto;
+}
+
+.voucher-terms h2{
+    text-align:center;
+    font-size:34px;
+    margin-bottom:20px;
+}
+
+.terms-intro{
+    text-align:center;
+    color:#555;
+    margin-bottom:40px;
+    line-height:1.7;
+}
+
+.terms-card{
+    background:white;
+    padding:50px;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.terms-list{
+    padding-left:20px;
+}
+
+.terms-list li{
+    margin-bottom:18px;
+    line-height:1.7;
+    color:#444;
+}
+
+
+
+
+
+
+
+
+
+.membership-section{
+padding:100px 10%;
+background:#f7f9ff;
+}
+
+.membership-header{
+text-align:center;
+max-width:700px;
+margin:auto;
+margin-bottom:70px;
+}
+
+.membership-header h1{
+font-size:42px;
+margin-bottom:15px;
+}
+
+.membership-header p{
+color:#555;
+line-height:1.7;
+}
+
+/* container */
+
+.membership-container{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+
+/* card */
+
+.membership-card{
+background:white;
+padding:50px 40px;
+width:420px;
+border-radius:14px;
+box-shadow:0 15px 40px rgba(0,0,0,0.08);
+transition:0.3s;
+position:relative;
+}
+
+.membership-card:hover{
+transform:translateY(-10px);
+}
+
+/* vip card */
+
+.vip{
+border:2px solid #14438a;
+}
+
+.vip-badge{
+position:absolute;
+top:-12px;
+right:20px;
+background:#14438a;
+color:white;
+padding:6px 14px;
+font-size:12px;
+border-radius:20px;
+}
+
+/* title */
+
+.plan-title{
+font-size:22px;
+margin-bottom:10px;
+}
+
+/* price */
+
+.price{
+font-size:36px;
+color:#14438a;
+margin-bottom:5px;
+}
+
+.price span{
+font-size:16px;
+color:#777;
+}
+
+.commitment{
+color:#777;
+margin-bottom:25px;
+}
+
+/* features */
+
+.features{
+list-style:none;
+padding:0;
+margin-bottom:25px;
+}
+
+.features li{
+margin-bottom:12px;
+color:#444;
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.features i{
+color:#14438a;
+}
+
+/* value */
+.value{
+margin-top:15px;
+font-weight:600;
+color:#333;
+display:flex;
+align-items:center;
+gap:8px;
+}
+
+.value i{
+color:#0b5ed7;
+}
+
+.saving{
+color:#0b5ed7;
+margin-bottom:25px;
+font-weight:600;
+display:flex;
+align-items:center;
+gap:8px;
+}
+
+.saving i{
+color:#0b5ed7;
+}
+
+.vip-desc{
+  margin-bottom: 30px;
+}
+/* button */
+
+.join-btn{
+background:#14438a;
+border:none;
+color:white;
+padding:14px 30px;
+border-radius:30px;
+cursor:pointer;
+font-size:15px;
+transition:0.3s;
+}
+
+.join-btn:hover{
+background:#0848a5;
+}
+
+
+
+
+/* ========================= */
+/* TABLET DEVICES */
+/* ========================= */
+
+@media (max-width: 992px){
+
+.voucher-card{
+flex-direction:column;
+}
+
+.voucher-right img{
+height:300px;
+}
+
+.membership-container{
+gap:30px;
+}
+
+.membership-card{
+width:100%;
+max-width:450px;
+}
+
+}
+
+
+/* ========================= */
+/* MOBILE DEVICES */
+/* ========================= */
+
+@media (max-width: 768px){
+
+.voucher-section{
+padding:70px 6%;
+}
+
+.voucher-heading{
+font-size:32px;
+}
+
+.voucher-sub{
+margin-bottom:40px;
+}
+
+.voucher-left{
+padding:35px;
+}
+
+.voucher-left h2{
+font-size:24px;
+}
+
+.voucher-details{
+flex-direction:column;
+gap:15px;
+}
+
+.voucher-right img{
+height:250px;
+}
+
+.terms-card{
+padding:35px;
+}
+
+.membership-section{
+padding:70px 6%;
+}
+
+.membership-header h1{
+font-size:32px;
+}
+
+.membership-container{
+flex-direction:column;
+align-items:center;
+}
+
+.membership-card{
+width:100%;
+max-width:420px;
+padding:40px 30px;
+}
+
+.price{
+font-size:30px;
+}
+
+}
+
+
+/* ========================= */
+/* SMALL MOBILE */
+/* ========================= */
+
+@media (max-width: 480px){
+
+.voucher-heading{
+font-size:26px;
+}
+
+.voucher-left{
+padding:28px;
+}
+
+.voucher-left h2{
+font-size:22px;
+}
+
+.buy-btn{
+width:100%;
+}
+
+.voucher-details strong{
+font-size:16px;
+}
+
+.membership-card{
+padding:35px 25px;
+}
+
+.plan-title{
+font-size:20px;
+}
+
+.price{
+font-size:26px;
+}
+
+.join-btn{
+width:100%;
+}
+
+.features li{
+font-size:14px;
+}
+
+}
