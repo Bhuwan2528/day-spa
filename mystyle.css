@@ -1182,6 +1182,7 @@ body {
   background:#fafafa;
   border-bottom:1px solid #eee;
   transition:0.3s;
+  gap: 10px;
 }
 
 .pf-pricing div:hover{
@@ -1199,7 +1200,6 @@ body {
 
 .pf-cta-box p{
   color: #002633;
-  margin-bottom: 10px;
 }
 
 .pf-btn-primary{
@@ -1209,6 +1209,7 @@ body {
   border-radius:30px;
   margin-right:10px;
   text-decoration:none;
+  margin-top: 20px;
 }
 
 .pf-btn-outline{
@@ -1217,6 +1218,7 @@ body {
   border-radius:30px;
   color:#fff;
   text-decoration:none;
+  margin-top: 20px;
 }
 
 

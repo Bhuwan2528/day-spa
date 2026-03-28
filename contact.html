@@ -128,45 +128,41 @@
         </div>
     </nav>
 
-    <div class="reservation">
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="staticBackdropLabel">make an appointment</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form class="reservation_form">
-                            <input class="reservation_input" type="text" placeholder="Name">
-                            <input class="reservation_input" type="text" placeholder="Phone">
-                            <input class="reservation_input" type="text" placeholder="address">
-                            <select class="reservation_input" id="select_js">
-                                <option value="">select service</option>
-                                <option value="">Facial Therapy</option>
-                                <option value="">Candle Message</option>
-                                <option value="">Stone Spa</option>
-                                <option value="">Body Treatments</option>
-                                <option value=""> Aroma Therapy</option>
-                            </select>
-                            <input class="reservation_input" type="date">
-                            <select class="reservation_input" id="select_js2">
-                                <option value="">select time</option>
-                                <option value="">08.00 am to 09.00 am</option>
-                                <option value="">10.00 am to 11.00 am</option>
-                                <option value="">12.00 pm to 01.00 pm</option>
-                                <option value="">02.00 pm to 03.00 pm</option>
-                                <option value="">04.00 pm to 05.00 pm</option>
-                            </select>
-                            <textarea rows="5" placeholder="Message"></textarea>
-                            <button class="common_btn" type="submit">submit now</button>
-                        </form>
-                    </div>
+<div class="reservation">
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">make an appointment</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
+
+                <div class="modal-body">
+                    <form class="reservation_form">
+
+                        <input class="reservation_input" type="text" placeholder="Name">
+                        <input class="reservation_input" type="text" placeholder="Phone">
+                        <input class="reservation_input" type="text" placeholder="Address">
+
+                        <input class="reservation_input" type="date">
+
+                        <input class="reservation_input" type="time">
+
+                        <textarea rows="5" placeholder="Tell us your service preference or any query..."></textarea>
+
+                        <button class="common_btn" type="submit">Submit Now</button>
+
+                    </form>
+                </div>
+
             </div>
         </div>
+
     </div>
+</div>
     <!--=====================================
         MENU END
     =====================================-->
@@ -203,48 +199,25 @@
     <section class="contact mt_95 xs_mt_45">
         <div class="container">
             <div class="row">
-                <div class="col-xl-3 col-sm-6 col-lg-4 wow fadeInUp" data-wow-duration="1s">
+                <div class="col-xl-4 col-sm-6 col-lg-4 wow fadeInUp" data-wow-duration="1s">
                     <div class="contact_info">
                         <span><i class="fas fa-map-marker-alt"></i></span>
                         <h3>Our Location</h3>
                         <p>Shop 9, The Promenade, South Morang, VIC 3752</p>
                     </div>
                 </div>
-                <div class="col-xl-3 col-sm-6 col-lg-4 wow fadeInUp" data-wow-duration="1s">
+                <div class="col-xl-4 col-sm-6 col-lg-4 wow fadeInUp" data-wow-duration="1s">
                     <div class="contact_info">
                         <span><i class="fas fa-envelope"></i></span>
                         <h3>Email Us</h3>
                         <p>dayspaatthelakes@hotmail.com</p>
                     </div>
                 </div>
-                <div class="col-xl-3 col-sm-6 col-lg-4 wow fadeInUp" data-wow-duration="1s">
+                <div class="col-xl-4 col-sm-6 col-lg-4 wow fadeInUp" data-wow-duration="1s">
                     <div class="contact_info">
                         <span><i class="fas fa-phone-alt"></i></span>
                         <h3>Call Us</h3>
                         <p>03 9408 3411</p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-sm-6 col-lg-4 wow fadeInUp" data-wow-duration="1s">
-                    <div class="contact_info">
-                        <span><i class="fas fa-clock"></i></span>
-                        <h3>Working Hours</h3>
-                        <p><strong>Monday :</strong></p>
-<p>By Appointments Only</p>
-
-<p><strong>Tuesday - Wednesday :</strong></p>
-<p>10:00 am - 05:00 pm</p>
-
-<p><strong>Thursday :</strong></p>
-<p>10:00 am - 09:00 pm</p>
-
-<p><strong>Friday :</strong></p>
-<p>10:00 am - 08:00 pm</p>
-
-<p><strong>Saturday :</strong></p>
-<p>09:00 am - 04:00 pm</p>
-
-<p><strong>After 3:00 pm by appointment only</strong> </p>
-
                     </div>
                 </div>
             </div>
@@ -443,6 +416,52 @@
 
     <!--main/custom js-->
     <script src="js/main.js"></script>
+    
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const form = document.querySelector(".contact_form");
+
+  if (!form) return;
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const inputs = form.querySelectorAll("input");
+    const textarea = form.querySelector("textarea");
+
+    let name = inputs[0].value.trim();
+    let email = inputs[1].value.trim();
+    let phone = inputs[2].value.trim();
+    let subject = inputs[3].value.trim();
+    let message = textarea.value.trim();
+
+    // ✅ basic validation
+    if (!name || !phone) {
+      alert("Please fill Name and Phone");
+      return;
+    }
+
+    let whatsappNumber = "917082764710"; // 👈 same number ya alag bhi use kar sakta hai
+
+    let text = `New Contact Message:
+Name: ${name}
+Email: ${email}
+Phone: ${phone}
+Subject: ${subject}
+Message: ${message}`;
+
+    let url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+
+    window.open(url, "_blank");
+
+    // optional reset
+    form.reset();
+  });
+
+});
+</script>
+
 </body>
 
 
