@@ -1220,6 +1220,44 @@ body {
 }
 
 
+/* ================= RESPONSIVE ================= */
+
+/* LAPTOP → TABLET */
+@media (max-width: 992px) {
+
+  .pf-wrapper{
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .pf-main-title{
+    font-size: 32px;
+  }
+
+  .pf-main-media {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .pf-video-box{
+    height: 400px;
+  }
+
+  .pf-image-box{
+    flex-direction: row;
+  }
+
+  .pf-image-box img{
+    height: 200px;
+  }
+
+}
+
+
+
+
+
+
 
 
 
