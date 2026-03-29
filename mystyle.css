@@ -1725,4 +1725,23 @@ width:100%;
 font-size:14px;
 }
 
+.terms-card{
+padding:15px;
+}
+
+.terms-list {
+  padding-left: 0px;
+}
+
+.voucher-terms {
+    padding: 100px 7%;
+}
+
+}
+
+
+
+
+.contact .container{
+  max-width: 1250px !important ;
 }

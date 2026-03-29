@@ -1185,6 +1185,8 @@ button {
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
+    font-size: 16px;
+    display: inline;
 }
 
 .featured_service_single:hover,
